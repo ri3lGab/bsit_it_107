@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	body {margin: 30px;}
+
+</style>
+<center>Grade Average Calculation </p><br></center>
+</head>
+		<script>
+			function non(){
+			
+                 var num1 = document.getElementById("firstnumber").value;
+                 var num2 = document.getElementById("secondnumber").value;
+                 var num3 = document.getElementById("thirdnumber").value;
+                 var num4 = document.getElementById("fourthnumber").value;
+                 
+            
+            average = (parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4)) / 4;
+            if (average >= 75){
+            	alert("Your Grade is: " + average + "\n Congratulations! You Passed");
+            }
+            else if(average < 75){
+            	alert("Your Grade is: " + average + "\n Sorry, You Failed");
+            }else{
+            	alert("ERROR!")
+            }
+ 			}
+    </script>
+<body onload>
+	<form>
+	<center>
+		<table border=2 cellspacing=5 cellpadding=5>
+		<center><tr>
+			<td>1st Grade</td>
+			<td><input type="text" id="firstnumber" placeholder="(firstnumber)"</p></td>
+			</tr>
+		</center>
+		<center><tr>
+			<td>2nd Grade</td>
+			<td><input type="text" id="secondnumber" placeholder="(secondnumber)"</p></td>
+			</tr>
+		</center>
+		<center><tr>
+			<td>3rd Grade</td>
+			<td><input type="text" id="thirdnumber" placeholder="(thirdnumber)"</p></td>
+			</tr>
+		</center>
+		<center><tr>
+			<td>4th Grade</td>
+			<td><input type="text" id="fourthnumber" placeholder="(fourthnumber)"</p></td>
+			</tr>
+		</center>
+		<center><tr>
+			<td><input type= "button" onclick=non() value="Compute"/></td>
+			</tr>
+		</center>
+	
+	</center>
+	</form>
+</body>
+</html>
